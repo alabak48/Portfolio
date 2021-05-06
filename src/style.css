@@ -1,0 +1,87 @@
+body {
+    background-image: url("world.png");
+    font-size: 16pt;
+    color: rgb(255, 137, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(84, 93, 93);
+}
+
+.grid-container {
+    height: 100px;
+    width: 100px;
+    margin-left: 12cm;
+    margin-right: 17cm;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card{
+    height: 100px;
+    width: 100px;
+    flex: 1 1 33%;
+    background-color: rgb(252, 243, 212);
+    border-radius: 12px;
+    padding-right: 1cm;
+    padding-left: 1cm;
+    transform: rotate(360deg);
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+
+}
+
+.country,
+.city {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.country {
+    z-index: 2;
+    backface-visibility: hidden;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.city {
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    transform: rotateY(180deg);
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+}
+
+.mexico, .papua, .iceland, .korea, .sweden, .georgia, .honduras, .tunisia, .austria {
+    width: 100px;
+    height: 100px;
+   margin-right: 80px;
+    margin-right: 80px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
